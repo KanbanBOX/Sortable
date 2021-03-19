@@ -3401,7 +3401,7 @@
             oldIndex = _ref12.oldIndex,
             putSortable = _ref12.putSortable;
         var toSortable = putSortable || this.sortable;
-        if (!evt) return;
+        if (!evt || parentEl === null) return;
         var options = this.options,
             children = parentEl.children; // Multi-drag selection
 
